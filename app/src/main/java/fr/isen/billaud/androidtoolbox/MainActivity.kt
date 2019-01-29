@@ -4,9 +4,15 @@ import android.content.Context
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.AdSize
+import com.google.android.gms.ads.AdView
+import com.google.android.gms.ads.MobileAds
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
+
+    lateinit var mAdView : AdView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,5 +43,14 @@ class MainActivity : AppCompatActivity() {
         webServiceIcon.setOnClickListener {
             startActivity(Intent(this@MainActivity, WebServiceActivity::class.java))
         }
+
+
+        MobileAds.initialize(this,
+            "ca-app-pub-2370569704081351~4488862396")
+
+        mAdView=adViewMain
+        val adRequest = AdRequest.Builder().build()
+        mAdView.loadAd(adRequest)
+
     }
 }

@@ -26,11 +26,10 @@ class WebServiceActivity : AppCompatActivity() {
 
 
         RecyclerRandomUser.layoutManager=LinearLayoutManager(this)
-
         val queue = Volley.newRequestQueue(this)
         val url = "https://randomuser.me/api?results=30&gender=female"
 
-// Request a string response from the provided URL.
+        // Request a string response from the provided URL.
         val stringRequest = StringRequest(Request.Method.GET, url,
             Response.Listener<String> { response ->
                 // Display the first 500 characters of the response string.

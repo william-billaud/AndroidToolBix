@@ -5,6 +5,7 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import com.google.android.gms.ads.MobileAds
 import kotlinx.android.synthetic.main.activity_login.*
 import java.util.logging.Logger
 
@@ -15,6 +16,8 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+        MobileAds.initialize(this, "ca-app-pub-2370569704081351~4488862396")
+        log.info("Publicité initialisé")
         val sharedPreference = getSharedPreferences("PREFERENCE_ANDROIDTOOLBOX", Context.MODE_PRIVATE)
         val editor = sharedPreference.edit()
         validationLogin.setOnClickListener {
