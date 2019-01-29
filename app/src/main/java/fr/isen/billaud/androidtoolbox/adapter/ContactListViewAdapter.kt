@@ -1,4 +1,4 @@
-package fr.isen.billaud.androidtoolbox.Adapter
+package fr.isen.billaud.androidtoolbox.adapter
 
 import android.app.Activity
 import android.view.View

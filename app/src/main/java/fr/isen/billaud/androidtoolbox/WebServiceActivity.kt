@@ -9,7 +9,7 @@ import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 import com.google.gson.Gson
-import fr.isen.billaud.androidtoolbox.Adapter.RandomUserAdapter
+import fr.isen.billaud.androidtoolbox.adapter.RandomUserAdapter
 import fr.isen.billaud.androidtoolbox.Model.RandomUser
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_web_service.*

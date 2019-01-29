@@ -16,7 +16,7 @@ import android.provider.MediaStore
 import android.support.v4.app.ActivityCompat
 import android.support.v4.content.ContextCompat
 import android.support.v7.app.AppCompatActivity
-import fr.isen.billaud.androidtoolbox.Adapter.ContactListViewAdapter
+import fr.isen.billaud.androidtoolbox.adapter.ContactListViewAdapter
 import kotlinx.android.synthetic.main.activity_permission.*
 import java.util.logging.Logger
 
